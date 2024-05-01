@@ -85,14 +85,15 @@ switch (time) {
   case 23:
     alert("Одиннадцать часов ночи");
     break;
+   
 }
   let number = +prompt("Введите одно любое любое вами число");
   let number2 = +prompt('Введите второе любимое вами число');
   let number3 = +prompt('Введите третье любимое вами число');
-  if (number>number2 && number < number3){
+  if ((number >= number2 && number <= number3) || (number <= number2 && number >= number3)){
 alert("Cреднее число " + number);
-  }else if(number2 > number && number2 < number3){
+  }else if((number2 >= number && number2 <= number3)|| (number2 <= number && number2 >= number3)){
     alert("Cреднее число " + number2);
-  }else if(number3 > number && number3 < number2){
+  }else if((number3 >= number && number3 <= number2) || (number3 <= number && number3 >= number2)){
     alert("Cреднее число " + number3);
   }
